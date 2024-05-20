@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Grupo7_Pizarra_SignalR/1.0.0": {
+        "runtime": {
+          "Grupo7_Pizarra_SignalR.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Grupo7_Pizarra_SignalR/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

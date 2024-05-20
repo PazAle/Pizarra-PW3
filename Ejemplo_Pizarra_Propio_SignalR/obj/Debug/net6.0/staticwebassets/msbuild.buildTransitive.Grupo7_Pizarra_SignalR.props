@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Grupo7_Pizarra_SignalR.props" />
+</Project>
