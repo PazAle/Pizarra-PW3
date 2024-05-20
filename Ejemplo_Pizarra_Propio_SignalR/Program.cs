@@ -27,7 +27,6 @@ app.UseAuthorization();
 
 app.MapRazorPages();
 app.MapHub<PizarraHub>("/pizarraHub");
-app.MapHub<ChatHub>("/chatHub");
 
 app.MapControllerRoute(
     name: "default",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ivan\\source\\repos\\Ejemplo_Pizarra_Propio_SignalR\\Ejemplo_Pizarra_Propio_SignalR\\Grupo7_Pizarra_SignalR.csproj": {}
+    "C:\\Users\\Ivan\\source\\repos\\Pizarra-PW3\\Ejemplo_Pizarra_Propio_SignalR\\Grupo7_Pizarra_SignalR.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ivan\\source\\repos\\Ejemplo_Pizarra_Propio_SignalR\\Ejemplo_Pizarra_Propio_SignalR\\Grupo7_Pizarra_SignalR.csproj": {
+    "C:\\Users\\Ivan\\source\\repos\\Pizarra-PW3\\Ejemplo_Pizarra_Propio_SignalR\\Grupo7_Pizarra_SignalR.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ivan\\source\\repos\\Ejemplo_Pizarra_Propio_SignalR\\Ejemplo_Pizarra_Propio_SignalR\\Grupo7_Pizarra_SignalR.csproj",
+        "projectUniqueName": "C:\\Users\\Ivan\\source\\repos\\Pizarra-PW3\\Ejemplo_Pizarra_Propio_SignalR\\Grupo7_Pizarra_SignalR.csproj",
         "projectName": "Grupo7_Pizarra_SignalR",
-        "projectPath": "C:\\Users\\Ivan\\source\\repos\\Ejemplo_Pizarra_Propio_SignalR\\Ejemplo_Pizarra_Propio_SignalR\\Grupo7_Pizarra_SignalR.csproj",
+        "projectPath": "C:\\Users\\Ivan\\source\\repos\\Pizarra-PW3\\Ejemplo_Pizarra_Propio_SignalR\\Grupo7_Pizarra_SignalR.csproj",
         "packagesPath": "C:\\Users\\Ivan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ivan\\source\\repos\\Ejemplo_Pizarra_Propio_SignalR\\Ejemplo_Pizarra_Propio_SignalR\\obj\\",
+        "outputPath": "C:\\Users\\Ivan\\source\\repos\\Pizarra-PW3\\Ejemplo_Pizarra_Propio_SignalR\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ivan\\AppData\\Roaming\\NuGet\\NuGet.Config",
