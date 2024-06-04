@@ -15,11 +15,19 @@ namespace Ejemplo_Pizarra_Propio_SignalR.Controllers
 
         public IActionResult Index()
         {
-            return View("PizarraColaborativa");
+            return View();
         }
 
         public IActionResult Privacy()
         {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult PizarraColaborativa(string nombre)
+        {
+            HttpContext.Session.SetString("nombre", nombre);
+            TempData["nombre"] = nombre;
             return View();
         }
 

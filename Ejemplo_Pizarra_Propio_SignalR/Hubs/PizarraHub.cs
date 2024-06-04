@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.SignalR;
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.SignalR;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
@@ -7,7 +8,7 @@ namespace Ejemplo_Pizarra_Propio_SignalR.Hubs
     public class PizarraHub : Hub
     {
         private static Dictionary<string, HashSet<string>> salas = new Dictionary<string, HashSet<string>>();
-
+        
         public async Task UnirseASala(string sala)
         {
             if (!salas.ContainsKey(sala))
@@ -15,7 +16,8 @@ namespace Ejemplo_Pizarra_Propio_SignalR.Hubs
                 salas[sala] = new HashSet<string>();
             }
 
-            salas[sala].Add(Context.ConnectionId);
+            //salas[sala].Add(Context.ConnectionId);
+            salas[sala].Add(Context.Items["Usuario"].ToString());
             await Groups.AddToGroupAsync(Context.ConnectionId, sala);
 
             await Clients.Group(sala).SendAsync("UsuarioConectado", Context.ConnectionId);
@@ -68,7 +70,8 @@ namespace Ejemplo_Pizarra_Propio_SignalR.Hubs
 
         public async Task EnviarMensaje(string sala, string message)
         {
-            var user = Context.User.Identity.Name ?? "Anonimo";
+            var user = Context.Items["Usuario"];
+            //var user = Context.User.Identity.Name ?? "Anonimo";
             await Clients.Group(sala).SendAsync("RecibirMensaje", user, message);
         }
 
@@ -79,6 +82,19 @@ namespace Ejemplo_Pizarra_Propio_SignalR.Hubs
                 var usuarios = new List<string>(salas[sala]);
                 await Clients.Group(sala).SendAsync("ActualizarUsuarios", usuarios);
             }
+        }
+
+        public override async Task OnConnectedAsync()
+        {
+            var httpContext = Context.GetHttpContext();
+            var usuario = httpContext.Session.GetString("nombre");
+
+            if (!string.IsNullOrEmpty(usuario))
+            {
+                Context.Items["Usuario"] = usuario;
+            }
+
+            await base.OnConnectedAsync();
         }
     }
 }

@@ -60,3 +60,35 @@ C:\Users\Ivan\source\repos\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\obj\Debug\
 C:\Users\Ivan\source\repos\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\obj\Debug\net6.0\Grupo7_Pizarra_SignalR.pdb
 C:\Users\Ivan\source\repos\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\obj\Debug\net6.0\Grupo7_Pizarra_SignalR.genruntimeconfig.cache
 C:\Users\Ivan\source\repos\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\obj\Debug\net6.0\ref\Grupo7_Pizarra_SignalR.dll
+C:\Ale\UNLaM\Programación Web III\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\appsettings.Development.json
+C:\Ale\UNLaM\Programación Web III\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\appsettings.json
+C:\Ale\UNLaM\Programación Web III\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\libman.json
+C:\Ale\UNLaM\Programación Web III\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\Grupo7_Pizarra_SignalR.staticwebassets.runtime.json
+C:\Ale\UNLaM\Programación Web III\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\Grupo7_Pizarra_SignalR.exe
+C:\Ale\UNLaM\Programación Web III\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\Grupo7_Pizarra_SignalR.deps.json
+C:\Ale\UNLaM\Programación Web III\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\Grupo7_Pizarra_SignalR.runtimeconfig.json
+C:\Ale\UNLaM\Programación Web III\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\Grupo7_Pizarra_SignalR.dll
+C:\Ale\UNLaM\Programación Web III\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\Grupo7_Pizarra_SignalR.pdb
+C:\Ale\UNLaM\Programación Web III\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\obj\Debug\net6.0\Grupo7_Pizarra_SignalR.GeneratedMSBuildEditorConfig.editorconfig
+C:\Ale\UNLaM\Programación Web III\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\obj\Debug\net6.0\Grupo7_Pizarra_SignalR.AssemblyInfoInputs.cache
+C:\Ale\UNLaM\Programación Web III\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\obj\Debug\net6.0\Grupo7_Pizarra_SignalR.AssemblyInfo.cs
+C:\Ale\UNLaM\Programación Web III\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\obj\Debug\net6.0\Grupo7_Pizarra_SignalR.csproj.CoreCompileInputs.cache
+C:\Ale\UNLaM\Programación Web III\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\obj\Debug\net6.0\Grupo7_Pizarra_SignalR.MvcApplicationPartsAssemblyInfo.cache
+C:\Ale\UNLaM\Programación Web III\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\obj\Debug\net6.0\Grupo7_Pizarra_SignalR.RazorAssemblyInfo.cache
+C:\Ale\UNLaM\Programación Web III\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\obj\Debug\net6.0\Grupo7_Pizarra_SignalR.RazorAssemblyInfo.cs
+C:\Ale\UNLaM\Programación Web III\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\obj\Debug\net6.0\Grupo7_Pizarra_SignalR.sourcelink.json
+C:\Ale\UNLaM\Programación Web III\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\obj\Debug\net6.0\staticwebassets.build.json
+C:\Ale\UNLaM\Programación Web III\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\obj\Debug\net6.0\staticwebassets.development.json
+C:\Ale\UNLaM\Programación Web III\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\obj\Debug\net6.0\staticwebassets\msbuild.Grupo7_Pizarra_SignalR.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Ale\UNLaM\Programación Web III\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\obj\Debug\net6.0\staticwebassets\msbuild.build.Grupo7_Pizarra_SignalR.props
+C:\Ale\UNLaM\Programación Web III\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Grupo7_Pizarra_SignalR.props
+C:\Ale\UNLaM\Programación Web III\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Grupo7_Pizarra_SignalR.props
+C:\Ale\UNLaM\Programación Web III\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Ale\UNLaM\Programación Web III\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Ale\UNLaM\Programación Web III\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\obj\Debug\net6.0\scopedcss\bundle\Grupo7_Pizarra_SignalR.styles.css
+C:\Ale\UNLaM\Programación Web III\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\obj\Debug\net6.0\scopedcss\projectbundle\Grupo7_Pizarra_SignalR.bundle.scp.css
+C:\Ale\UNLaM\Programación Web III\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\obj\Debug\net6.0\Grupo7_Pizarra_SignalR.dll
+C:\Ale\UNLaM\Programación Web III\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\obj\Debug\net6.0\refint\Grupo7_Pizarra_SignalR.dll
+C:\Ale\UNLaM\Programación Web III\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\obj\Debug\net6.0\Grupo7_Pizarra_SignalR.pdb
+C:\Ale\UNLaM\Programación Web III\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\obj\Debug\net6.0\Grupo7_Pizarra_SignalR.genruntimeconfig.cache
+C:\Ale\UNLaM\Programación Web III\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\obj\Debug\net6.0\ref\Grupo7_Pizarra_SignalR.dll
