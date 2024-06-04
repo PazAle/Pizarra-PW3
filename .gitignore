@@ -43,4 +43,12 @@ launchSettings.json
 *.csproj.nuget.dgspec.json
 *.csproj.nuget.g.props
 *.csproj.nuget.g.targets
-.project.nu
+.project.nuget.cache
+
+# Archivos temporales
+*.tmp
+*.temp
+
+# Otros archivos innecesarios
+Thumbs.db
+Desktop.ini
