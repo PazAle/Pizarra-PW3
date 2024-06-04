@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\Ejemplo_Pizarra_Propio_SignalR.props" />
-</Project>
