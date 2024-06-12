@@ -1,4 +1,5 @@
 # Archivos y carpetas de Visual Studio
+vs
 .vs/
 *.suo
 *.user
@@ -6,6 +7,8 @@
 *.sln.docstates
 
 # Archivos de compilación
+Ejemplo_Pizarra_Propio_SignalR/obj
+Ejemplo_Pizarra_Propio_SignalR/bin
 bin
 obj
 bin/
