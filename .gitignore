@@ -6,6 +6,8 @@
 *.sln.docstates
 
 # Archivos de compilación
+bin
+obj
 bin/
 obj/
 *.dll
