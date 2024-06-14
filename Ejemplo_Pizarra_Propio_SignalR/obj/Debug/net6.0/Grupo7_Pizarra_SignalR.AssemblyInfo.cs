@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Grupo7_Pizarra_SignalR")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b9e8eb65214a0fffe4f2782399eba22a83c7db32")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("Grupo7_Pizarra_SignalR")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Grupo7_Pizarra_SignalR")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

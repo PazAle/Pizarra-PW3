@@ -92,3 +92,19 @@ C:\Ale\UNLaM\Programación Web III\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\ob
 C:\Ale\UNLaM\Programación Web III\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\obj\Debug\net6.0\Grupo7_Pizarra_SignalR.pdb
 C:\Ale\UNLaM\Programación Web III\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\obj\Debug\net6.0\Grupo7_Pizarra_SignalR.genruntimeconfig.cache
 C:\Ale\UNLaM\Programación Web III\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\obj\Debug\net6.0\ref\Grupo7_Pizarra_SignalR.dll
+C:\Users\Ivan\source\repos\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Ivan\source\repos\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\Quartz.dll
+C:\Users\Ivan\source\repos\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\Quartz.Extensions.DependencyInjection.dll
+C:\Users\Ivan\source\repos\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\Quartz.Extensions.Hosting.dll
+C:\Users\Ivan\source\repos\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Ivan\source\repos\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\Ivan\source\repos\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Ivan\source\repos\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\Ivan\source\repos\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\Ivan\source\repos\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Ivan\source\repos\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\Ivan\source\repos\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\Ivan\source\repos\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Ivan\source\repos\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\Ivan\source\repos\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\obj\Debug\net6.0\Grupo7_Pizarra_SignalR.csproj.AssemblyReference.cache
+C:\Users\Ivan\source\repos\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\obj\Debug\net6.0\Grupo7_Pizarra_SignalR.csproj.CopyComplete
