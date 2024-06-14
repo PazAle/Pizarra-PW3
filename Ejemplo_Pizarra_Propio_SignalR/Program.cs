@@ -1,4 +1,5 @@
 using Ejemplo_Pizarra_Propio_SignalR.Hubs;
+using Quartz;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,6 +16,15 @@ builder.Services.AddSession(options =>
 
 builder.Services.AddRazorPages();
 builder.Services.AddSignalR();
+
+builder.Services.AddQuartz(q =>
+{
+    q.UseMicrosoftDependencyInjectionJobFactory();
+});
+
+// Add Quartz.NET hosted service
+builder.Services.AddQuartzHostedService(q => q.WaitForJobsToComplete = true);
+
 
 var app = builder.Build();
 

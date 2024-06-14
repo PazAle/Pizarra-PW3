@@ -1,19 +1,41 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.SignalR;
+using Quartz;
 using System.Collections.Generic;
+using System.Reflection.Metadata;
 using System.Threading.Tasks;
+using Grupo7_Pizarra_SignalR;
 
 namespace Ejemplo_Pizarra_Propio_SignalR.Hubs
 {
     public class PizarraHub : Hub
     {
         private static Dictionary<string, HashSet<string>> salas = new Dictionary<string, HashSet<string>>();
-        
+        private readonly ISchedulerFactory _schedulerFactory;
+
+        public PizarraHub(ISchedulerFactory schedulerFactory)
+        {
+            _schedulerFactory = schedulerFactory;
+        }
         public async Task UnirseASala(string sala)
         {
             if (!salas.ContainsKey(sala))
             {
                 salas[sala] = new HashSet<string>();
+
+                var scheduler = await _schedulerFactory.GetScheduler();
+                var job = JobBuilder.Create<SignalRJob>()
+                                    .WithIdentity(sala)
+                                    .Build();
+
+                var trigger = TriggerBuilder.Create()
+                                            .ForJob(job)
+                                            .WithIdentity($"{sala}-trigger")
+                                            .WithCronSchedule("0 0/1 * * * ?")
+                                            .Build();
+
+                await scheduler.ScheduleJob(job, trigger);
+
             }
 
             //salas[sala].Add(Context.ConnectionId);
@@ -96,5 +118,6 @@ namespace Ejemplo_Pizarra_Propio_SignalR.Hubs
 
             await base.OnConnectedAsync();
         }
+
     }
 }

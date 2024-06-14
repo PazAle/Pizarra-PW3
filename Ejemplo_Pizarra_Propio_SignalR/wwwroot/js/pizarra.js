@@ -1,5 +1,7 @@
 ﻿var connection = new signalR.HubConnectionBuilder().withUrl("/pizarraHub").build();
 var canvas = document.getElementById("pizarra");
+var btnGuardar = document.getElementById("guardarBtn");
+var btnCargar = document.getElementById("cargarBtn");
 var context = canvas.getContext("2d");
 var drawing = false;
 var prevX = 0, prevY = 0;
@@ -26,6 +28,11 @@ function getMousePos(canvas, evt) {
     };
 }
 
+function guardarImagen() {
+    const dataURL = canvas.toDataURL();
+    localStorage.setItem('savedImage', dataURL);
+    alert("Imagen guardada en el almacenamiento local");
+}
 
 // Conexión con el hub de SignalR
 connection.start().then(function () {
@@ -49,6 +56,24 @@ connection.start().then(function () {
         drawing = true;
         prevX = pos.x;
         prevY = pos.y;
+    });
+
+    btnGuardar.addEventListener("click", guardarImagen ());
+
+    btnCargar.addEventListener("click", () => {
+        const dataURL = localStorage.getItem('savedImage');
+        if (dataURL) {
+            const img = new Image();
+            img.src = dataURL;
+            console.log(img.src);
+            img.onload = () => {
+                context.clearRect(0, 0, canvas.width, canvas.height);
+                context.drawImage(img, 0, 0);
+            };
+            alert("Imagen cargada desde el almacenamiento local");
+        } else {
+            alert("No hay imagen guardada en el almacenamiento local");
+        }
     });
 
     canvas.addEventListener("mousemove", function (e) {
@@ -106,6 +131,11 @@ connection.start().then(function () {
             listaUsuarios.appendChild(userItem);
         });
     });
+
+    connection.on("GuardarImagen", function () {
+        guardarImagen();
+    });
+
 }).catch(function (err) {
     return console.error(err.toString());
 });
