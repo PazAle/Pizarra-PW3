@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Ale\\UNLaM\\Programación Web III\\Pizarra-PW3\\Ejemplo_Pizarra_Propio_SignalR\\Grupo7_Pizarra_SignalR.csproj": {}
+    "C:\\Users\\Ivan\\source\\repos\\Pizarra-PW3\\Ejemplo_Pizarra_Propio_SignalR\\Grupo7_Pizarra_SignalR.csproj": {}
   },
   "projects": {
-    "C:\\Ale\\UNLaM\\Programación Web III\\Pizarra-PW3\\Ejemplo_Pizarra_Propio_SignalR\\Grupo7_Pizarra_SignalR.csproj": {
+    "C:\\Users\\Ivan\\source\\repos\\Pizarra-PW3\\Ejemplo_Pizarra_Propio_SignalR\\Grupo7_Pizarra_SignalR.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Ale\\UNLaM\\Programación Web III\\Pizarra-PW3\\Ejemplo_Pizarra_Propio_SignalR\\Grupo7_Pizarra_SignalR.csproj",
+        "projectUniqueName": "C:\\Users\\Ivan\\source\\repos\\Pizarra-PW3\\Ejemplo_Pizarra_Propio_SignalR\\Grupo7_Pizarra_SignalR.csproj",
         "projectName": "Grupo7_Pizarra_SignalR",
-        "projectPath": "C:\\Ale\\UNLaM\\Programación Web III\\Pizarra-PW3\\Ejemplo_Pizarra_Propio_SignalR\\Grupo7_Pizarra_SignalR.csproj",
-        "packagesPath": "C:\\Users\\CONTROLSHIFT\\.nuget\\packages\\",
-        "outputPath": "C:\\Ale\\UNLaM\\Programación Web III\\Pizarra-PW3\\Ejemplo_Pizarra_Propio_SignalR\\obj\\",
+        "projectPath": "C:\\Users\\Ivan\\source\\repos\\Pizarra-PW3\\Ejemplo_Pizarra_Propio_SignalR\\Grupo7_Pizarra_SignalR.csproj",
+        "packagesPath": "C:\\Users\\Ivan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ivan\\source\\repos\\Pizarra-PW3\\Ejemplo_Pizarra_Propio_SignalR\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\CONTROLSHIFT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Ivan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -34,16 +34,21 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Quartz": {
+              "target": "Package",
+              "version": "[3.8.1, )"
+            },
+            "Quartz.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[3.8.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -63,7 +68,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

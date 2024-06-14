@@ -1,8 +1,27 @@
 {
   "version": 2,
-  "dgSpecHash": "E3DRe90ZXfxC7YDy6/RDPUpX+wbqzIO6j7kd3MhhXaMwAkfjN/O4vBBcIygvs6S2oiQ1pzH6g0QTqcIJxefUJQ==",
+  "dgSpecHash": "u+AJ/FLEFpjJZHUjv3OVqH50oRZJm4noZ9xKef8YTmpQnvpbd0lQoH38GREzxAVxXFPkeMb1kBJmsBr4QLR+yw==",
   "success": true,
-  "projectFilePath": "C:\\Ale\\UNLaM\\Programación Web III\\Pizarra-PW3\\Ejemplo_Pizarra_Propio_SignalR\\Grupo7_Pizarra_SignalR.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Ivan\\source\\repos\\Pizarra-PW3\\Ejemplo_Pizarra_Propio_SignalR\\Grupo7_Pizarra_SignalR.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Ivan\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\Ivan\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\Ivan\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\6.0.0\\microsoft.extensions.fileproviders.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\Ivan\\.nuget\\packages\\microsoft.extensions.hosting.abstractions\\6.0.0\\microsoft.extensions.hosting.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\Ivan\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\2.1.1\\microsoft.extensions.logging.abstractions.2.1.1.nupkg.sha512",
+    "C:\\Users\\Ivan\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "C:\\Users\\Ivan\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\Ivan\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
+    "C:\\Users\\Ivan\\.nuget\\packages\\quartz\\3.8.1\\quartz.3.8.1.nupkg.sha512",
+    "C:\\Users\\Ivan\\.nuget\\packages\\quartz.extensions.dependencyinjection\\3.8.1\\quartz.extensions.dependencyinjection.3.8.1.nupkg.sha512",
+    "C:\\Users\\Ivan\\.nuget\\packages\\quartz.extensions.hosting\\3.8.1\\quartz.extensions.hosting.3.8.1.nupkg.sha512",
+    "C:\\Users\\Ivan\\.nuget\\packages\\system.configuration.configurationmanager\\6.0.1\\system.configuration.configurationmanager.6.0.1.nupkg.sha512",
+    "C:\\Users\\Ivan\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512",
+    "C:\\Users\\Ivan\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\Ivan\\.nuget\\packages\\system.security.accesscontrol\\6.0.0\\system.security.accesscontrol.6.0.0.nupkg.sha512",
+    "C:\\Users\\Ivan\\.nuget\\packages\\system.security.cryptography.protecteddata\\6.0.0\\system.security.cryptography.protecteddata.6.0.0.nupkg.sha512",
+    "C:\\Users\\Ivan\\.nuget\\packages\\system.security.permissions\\6.0.0\\system.security.permissions.6.0.0.nupkg.sha512",
+    "C:\\Users\\Ivan\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

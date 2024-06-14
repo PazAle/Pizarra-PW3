@@ -7,6 +7,7 @@ var drawing = false;
 var prevX = 0, prevY = 0;
 var salaActual = "";
 
+
 // Método para dibujar en la pizarra
 function dibujarEnPizarra(data) {
     var dibujo = JSON.parse(data);
@@ -19,7 +20,6 @@ function dibujarEnPizarra(data) {
     context.closePath();
 }
 
-
 function getMousePos(canvas, evt) {
     var rect = canvas.getBoundingClientRect();
     return {
@@ -29,9 +29,11 @@ function getMousePos(canvas, evt) {
 }
 
 function guardarImagen() {
-    const dataURL = canvas.toDataURL();
-    localStorage.setItem('savedImage', dataURL);
-    alert("Imagen guardada en el almacenamiento local");
+    // Esta función ya no es necesaria
+}
+
+function cargarImagen() {
+    // Esta función ya no es necesaria
 }
 
 // Conexión con el hub de SignalR
@@ -58,24 +60,6 @@ connection.start().then(function () {
         prevY = pos.y;
     });
 
-    btnGuardar.addEventListener("click", guardarImagen ());
-
-    btnCargar.addEventListener("click", () => {
-        const dataURL = localStorage.getItem('savedImage');
-        if (dataURL) {
-            const img = new Image();
-            img.src = dataURL;
-            console.log(img.src);
-            img.onload = () => {
-                context.clearRect(0, 0, canvas.width, canvas.height);
-                context.drawImage(img, 0, 0);
-            };
-            alert("Imagen cargada desde el almacenamiento local");
-        } else {
-            alert("No hay imagen guardada en el almacenamiento local");
-        }
-    });
-
     canvas.addEventListener("mousemove", function (e) {
         if (drawing && salaActual) {
             var pos = getMousePos(canvas, e);
@@ -92,6 +76,7 @@ connection.start().then(function () {
                 size: size
             };
             dibujarEnPizarra(JSON.stringify(dibujo));
+
             connection.invoke("Dibujar", salaActual, JSON.stringify(dibujo)).catch(function (err) {
                 return console.error(err.toString());
             });
