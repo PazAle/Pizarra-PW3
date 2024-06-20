@@ -6,8 +6,39 @@ var context = canvas.getContext("2d");
 var drawing = false;
 var prevX = 0, prevY = 0;
 var salaActual = "";
+let divPizarra = document.getElementById("divPizarra");
+let divChat = document.getElementById("divChat");
+let divNombreSala = document.getElementById("divNombreSala");
+let divSalasCreadas = document.getElementById("divSalasCreadas");
+let divSalir = document.getElementById("salir");
+let btnSalir = document.createElement("button");
 
 
+function unirseASala() {
+    divPizarra.removeAttribute("hidden");
+    divChat.removeAttribute("hidden");
+    divNombreSala.setAttribute("hidden", true);
+    divSalasCreadas.setAttribute("hidden", true);
+    btnSalir.textContent = "Salir de la sala";
+    btnSalir.className = "btn btn-secondary";
+    divSalir.appendChild(btnSalir);
+    btnSalir.setAttribute("href", "/PizarraColaborativa");
+    divSalir.removeAttribute("hidden");
+    
+  btnSalir.onclick = function () {
+        connection.invoke("SalirDeSala", salaActual).catch(function (err) {
+            return console.error(err.toString());
+        });
+        divPizarra.setAttribute("hidden", true);
+        divChat.setAttribute("hidden", true);
+        divNombreSala.removeAttribute("hidden");
+        divSalasCreadas.removeAttribute("hidden");
+        btnSalir.remove;
+        divSalir.setAttribute("hidden", true);
+        document.getElementById("salaInput").value = "";
+        salaActual = "";
+    };
+}
 // Método para dibujar en la pizarra
 function dibujarEnPizarra(data) {
     var dibujo = JSON.parse(data);
@@ -43,7 +74,27 @@ connection.start().then(function () {
         connection.invoke("UnirseASala", salaActual).catch(function (err) {
             return console.error(err.toString());
         });
+        unirseASala();
     });
+        const buttons = document.querySelectorAll('#divSalasCreadas button.btn-primary');
+
+        buttons.forEach(button => {
+            button.addEventListener('click', function (event) {
+                
+                event.preventDefault();
+
+                let input = button.previousElementSibling;
+                salaActual = input.value;
+                
+                console.log(salaActual);
+                connection.invoke("UnirseASala", salaActual).catch(function (err) {
+                    return console.error(err.toString());
+                });
+
+                unirseASala();
+            });
+        });
+    
 
     document.getElementById("sendButton").addEventListener("click", function () {
         var message = document.getElementById("messageInput").value;
@@ -60,7 +111,33 @@ connection.start().then(function () {
         prevY = pos.y;
     });
 
+    //canvas.addEventListener("mousemove", function (e) {
+    //    if (drawing && salaActual) {
+    //        var pos = getMousePos(canvas, e);
+    //        var currX = pos.x;
+    //        var currY = pos.y;
+    //        var color = $("#color").val();
+    //        var size = $("#size").val();
+    //        var dibujo = {
+    //            prevX: prevX,
+    //            prevY: prevY,
+    //            currX: currX,
+    //            currY: currY,
+    //            color: color,
+    //            size: size
+    //        };
+    //        dibujarEnPizarra(JSON.stringify(dibujo));
+
+    //        connection.invoke("Dibujar", salaActual, JSON.stringify(dibujo)).catch(function (err) {
+    //            return console.error(err.toString());
+    //        });
+    //        prevX = currX;
+    //        prevY = currY;
+    //    }
+    //});
+
     canvas.addEventListener("mousemove", function (e) {
+
         if (drawing && salaActual) {
             var pos = getMousePos(canvas, e);
             var currX = pos.x;
@@ -76,13 +153,28 @@ connection.start().then(function () {
                 size: size
             };
             dibujarEnPizarra(JSON.stringify(dibujo));
-
             connection.invoke("Dibujar", salaActual, JSON.stringify(dibujo)).catch(function (err) {
                 return console.error(err.toString());
             });
             prevX = currX;
             prevY = currY;
         }
+    });
+
+    //connection.invoke("ObtenerDibujos", parseInt(salaActual)).then(function (dibujos) {
+    //    dibujos.forEach(function (dibujo) {
+    //        dibujarEnPizarra(dibujo);
+    //    });
+    //}).catch(function (err) {
+    //    return console.error(err.toString());
+    //});
+
+    connection.invoke("ObtenerDibujos", salaActual).then(function (dibujos) {
+        dibujos.forEach(function (dibujo) {
+            dibujarEnPizarra(dibujo);
+        });
+    }).catch(function (err) {
+        return console.error(err.toString());
     });
 
     canvas.addEventListener("mouseup", function () {
@@ -116,11 +208,11 @@ connection.start().then(function () {
             listaUsuarios.appendChild(userItem);
         });
     });
-
     connection.on("GuardarImagen", function () {
         guardarImagen();
     });
 
 }).catch(function (err) {
-    return console.error(err.toString());
+    //return console.error(err.toString());
+    return console.log("aca");
 });

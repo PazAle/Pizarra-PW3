@@ -1,22 +1,36 @@
 ﻿@{
     Layout = "_PizarraLayout";
     var nombre = TempData["nombre"];
+    var salaSeleccionada = TempData["sala"];
 }
 
 <div>
     <h1>¡Bienvenido, @nombre!</h1>
 </div>
 
-<div class="row my-4">
+<div class="row my-4" id="divNombreSala">
     <div class="col-md-8 d-flex">
         <input type="text" class="form-control me-2 col-md-6" id="salaInput" placeholder="Nombre de la sala">
         <button class="btn btn-primary col-md-3 ml-2" id="crearSala">Crear/Unirse a Sala</button>
     </div>
 </div>
 
-    <div class="row">
+@if (ViewBag.Salas.Count > 0)
+{
+    <div class="form-group" id="divSalasCreadas">
+        @foreach (var sala in ViewBag.Salas)
+        {
+            <input type="text" hidden="true" name="salaCreada" value="@sala"/>
+            <button class="btn btn-primary mr-1 mb-1" id="unirme">@sala</button>
+        }
+    </div>
+}
+
+<div id="salir" hidden="true"></div>
+
+    <div class="row" hidden="true" id="divPizarra">
         <div class="col">
-        <canvas id="pizarra" width="800" height="600" style="background-image: url('../img/pizarra.jpg')"></canvas>
+        <canvas id="pizarra" width="800" height="600" style="background-color: #2E8B57; border: 10px solid #8B4513; box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); border-radius: 5px; margin: 20px auto;" @*style="background-image: url('../img/pizarra.jpg')"*@></canvas>
         </div>
         <div class="col">
             <div class="d-flex align-items-center mb-2">
@@ -38,7 +52,7 @@
     </div>
 
 
-    <div class="row my-4">
+    <div class="row my-4" hidden="true" id="divChat">
         <div class="col-md-8">
             <div id="chat-container" class="border p-2">
                 <div id="messagesList"></div>
