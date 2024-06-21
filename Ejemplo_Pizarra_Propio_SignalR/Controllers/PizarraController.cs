@@ -29,9 +29,13 @@ public class PizarraController : Controller
     }
 
     [HttpPost]
-    public IActionResult PizarraColaborativa(string nombre)
+    public IActionResult PizarraColaborativa(string? nombre)
     {
         HttpContext.Session.SetString("nombre", nombre);
+        if(nombre == null)
+        {
+            nombre = HttpContext.Session.GetString("nombre");
+        }
         TempData["nombre"] = nombre;
         ViewBag.Salas = _salaServicio.ObtenerTodosLosNombresDeLasSalas();
         return View();

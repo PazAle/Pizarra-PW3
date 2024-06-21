@@ -18,6 +18,7 @@ public class PizarraHub : Hub
     private readonly ISchedulerFactory _schedulerFactory;
     private readonly IDibujoServicio _dibujoServicio;
     private readonly ISalaServicio _salaServicio;
+    public bool primeraconexion = true;
 
     public PizarraHub(ISchedulerFactory schedulerFactory, IDibujoServicio dibujoServicio, ISalaServicio salaServicio, PizarraContext context)
     {
@@ -38,6 +39,11 @@ public class PizarraHub : Hub
 
     public async Task UnirseASala(string sala)
     {
+        if (!primeraconexion)
+        {
+            dibujosPorSala[sala] = new List<string>();
+            dibujosPorSala[sala] = await _dibujoServicio.ObtenerDibujosAsync((await _salaServicio.ObtenerSalaPorNombreAsync(sala)).IdSala);
+        }
         ObtenerTodasLasSalas();
         if (!salas.ContainsKey(sala))
         {
@@ -67,7 +73,7 @@ public class PizarraHub : Hub
         dibujosPorSala[sala] = dibujos;
         await Clients.Group(sala).SendAsync("UsuarioConectado", usuario);
         await EnviarDibujoActual(sala, Context.ConnectionId);
-        
+        primeraconexion = false;
         await ActualizarUsuariosEnSala(sala);
     }
 

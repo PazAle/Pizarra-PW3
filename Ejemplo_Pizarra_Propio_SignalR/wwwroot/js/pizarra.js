@@ -11,7 +11,7 @@ let divChat = document.getElementById("divChat");
 let divNombreSala = document.getElementById("divNombreSala");
 let divSalasCreadas = document.getElementById("divSalasCreadas");
 let divSalir = document.getElementById("salir");
-let btnSalir = document.createElement("button");
+let btnSalir = document.createElement('a');
 
 
 function unirseASala() {
@@ -22,13 +22,13 @@ function unirseASala() {
     btnSalir.textContent = "Salir de la sala";
     btnSalir.className = "btn btn-secondary";
     divSalir.appendChild(btnSalir);
-    btnSalir.setAttribute("href", "/PizarraColaborativa");
     divSalir.removeAttribute("hidden");
     
   btnSalir.onclick = function () {
         connection.invoke("SalirDeSala", salaActual).catch(function (err) {
             return console.error(err.toString());
         });
+        window.location.reload();
         divPizarra.setAttribute("hidden", true);
         divChat.setAttribute("hidden", true);
         divNombreSala.removeAttribute("hidden");
@@ -38,6 +38,7 @@ function unirseASala() {
         document.getElementById("salaInput").value = "";
         salaActual = "";
     };
+
 }
 // Método para dibujar en la pizarra
 function dibujarEnPizarra(data) {
@@ -93,8 +94,7 @@ connection.start().then(function () {
 
                 unirseASala();
             });
-        });
-    
+        });  
 
     document.getElementById("sendButton").addEventListener("click", function () {
         var message = document.getElementById("messageInput").value;
