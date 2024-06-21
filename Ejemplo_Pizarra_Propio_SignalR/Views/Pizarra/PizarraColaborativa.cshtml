@@ -14,7 +14,6 @@
         <button class="btn btn-primary col-md-3 ml-2" id="crearSala">Crear/Unirse a Sala</button>
     </div>
 </div>
-
 @if (ViewBag.Salas.Count > 0)
 {
     <div class="form-group" id="divSalasCreadas">
@@ -65,6 +64,8 @@
                     <button class="btn btn-success" id="sendButton">Enviar</button>
                 </div>
             </div>
+        <span id="error-message" style="color: red; display: none;">El mensaje no puede estar vacío</span>
+
         </div>
     </div>
 

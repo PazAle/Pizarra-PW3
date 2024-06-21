@@ -13,7 +13,6 @@ let divSalasCreadas = document.getElementById("divSalasCreadas");
 let divSalir = document.getElementById("salir");
 let btnSalir = document.createElement('a');
 
-
 function unirseASala() {
     divPizarra.removeAttribute("hidden");
     divChat.removeAttribute("hidden");
@@ -23,7 +22,6 @@ function unirseASala() {
     btnSalir.className = "btn btn-secondary";
     divSalir.appendChild(btnSalir);
     divSalir.removeAttribute("hidden");
-    
   btnSalir.onclick = function () {
         connection.invoke("SalirDeSala", salaActual).catch(function (err) {
             return console.error(err.toString());
@@ -72,6 +70,13 @@ function cargarImagen() {
 connection.start().then(function () {
     document.getElementById("crearSala").addEventListener("click", function () {
         salaActual = document.getElementById("salaInput").value;
+        errorSala = document.getElementById("error-sala");
+
+        if (salaActual === "") {
+            errorSala.style.display = "block";
+            return;
+        }
+        errorSala.style.display = "none";
         connection.invoke("UnirseASala", salaActual).catch(function (err) {
             return console.error(err.toString());
         });
@@ -98,10 +103,17 @@ connection.start().then(function () {
 
     document.getElementById("sendButton").addEventListener("click", function () {
         var message = document.getElementById("messageInput").value;
-        connection.invoke("EnviarMensaje", salaActual, message).catch(function (err) {
-            return console.error(err.toString());
-        });
-        document.getElementById("messageInput").value = "";
+        var errorMessage = document.getElementById("error-message");
+
+        if (message.trim() === "") {
+            errorMessage.style.display = "inline";
+        } else {
+            errorMessage.style.display = "none";
+            connection.invoke("EnviarMensaje", salaActual, message).catch(function (err) {
+                return console.error(err.toString());
+            });
+            document.getElementById("messageInput").value = "";
+        }
     });
 
     canvas.addEventListener("mousedown", function (e) {
@@ -187,6 +199,9 @@ connection.start().then(function () {
 
     document.getElementById("limpiar").addEventListener("click", function () {
         context.clearRect(0, 0, canvas.width, canvas.height);
+        connection.invoke("BorrarDibujos", salaActual).catch(function (err) {
+            return console.error(err.toString());
+        });
     });
 
     connection.on("dibujarEnPizarra", function (data) {

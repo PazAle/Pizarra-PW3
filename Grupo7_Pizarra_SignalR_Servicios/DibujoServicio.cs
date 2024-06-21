@@ -7,6 +7,7 @@ public interface IDibujoServicio
 {
     Task GuardarDibujoAsync(int idSala, string data);
     Task<List<string>> ObtenerDibujosAsync(int idSala);
+    void BorrarDibujos(int idSala);
 }
 public class DibujoServicio : IDibujoServicio
 {
@@ -16,6 +17,18 @@ public class DibujoServicio : IDibujoServicio
     {
         _context = context;
     }
+
+    public void BorrarDibujos(int idSala)
+    {
+        var dibujos = _context.Dibujos.Where(d => d.IdSala == idSala).ToList();
+        if (dibujos != null)
+        {
+            _context.Dibujos.RemoveRange(dibujos);
+            _context.SaveChanges();
+
+        }
+    }
+
     public async Task GuardarDibujoAsync(int idSala, string data)
     {
         var dibujo = new Dibujo

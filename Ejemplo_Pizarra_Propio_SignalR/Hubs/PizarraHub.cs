@@ -39,6 +39,7 @@ public class PizarraHub : Hub
 
     public async Task UnirseASala(string sala)
     {
+
         if (!primeraconexion)
         {
             dibujosPorSala[sala] = new List<string>();
@@ -161,8 +162,21 @@ public class PizarraHub : Hub
 
     public async Task EnviarMensaje(string sala, string message)
     {
-        var usuario = Context.Items["Usuario"];
-        await Clients.Group(sala).SendAsync("RecibirMensaje", usuario, message);
+        if (!string.IsNullOrEmpty(message))
+        {
+            var usuario = Context.Items["Usuario"];
+            await Clients.Group(sala).SendAsync("RecibirMensaje", usuario, message);
+        }
+
+    }
+
+    public async Task BorrarDibujos(string sala)
+    {
+        if (salas.ContainsKey(sala))
+        {
+            var salaEncontrada = await _salaServicio.ObtenerSalaPorNombreAsync(sala);
+            _dibujoServicio.BorrarDibujos(salaEncontrada.IdSala);
+        }
     }
 
     private async Task ActualizarUsuariosEnSala(string sala)
