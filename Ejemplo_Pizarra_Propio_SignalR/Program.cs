@@ -1,10 +1,16 @@
 using Ejemplo_Pizarra_Propio_SignalR.Hubs;
+using Grupo7_Pizarra_SignalR_Data.Entidades;
+using Grupo7_Pizarra_SignalR_Servicios;
 using Quartz;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddScoped<PizarraContext>();
+builder.Services.AddScoped<IDibujoServicio, DibujoServicio>();
+builder.Services.AddScoped<ISalaServicio, SalaServicio>();
 
 builder.Services.AddDistributedMemoryCache();
 builder.Services.AddSession(options =>
