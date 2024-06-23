@@ -108,3 +108,157 @@ C:\Users\Ivan\source\repos\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\
 C:\Users\Ivan\source\repos\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Users\Ivan\source\repos\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\obj\Debug\net6.0\Grupo7_Pizarra_SignalR.csproj.AssemblyReference.cache
 C:\Users\Ivan\source\repos\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\obj\Debug\net6.0\Grupo7_Pizarra_SignalR.csproj.CopyComplete
+C:\Prueba\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\appsettings.Development.json
+C:\Prueba\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\appsettings.json
+C:\Prueba\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\libman.json
+C:\Prueba\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\Grupo7_Pizarra_SignalR.staticwebassets.runtime.json
+C:\Prueba\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\Grupo7_Pizarra_SignalR.exe
+C:\Prueba\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\Grupo7_Pizarra_SignalR.deps.json
+C:\Prueba\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\Grupo7_Pizarra_SignalR.runtimeconfig.json
+C:\Prueba\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\Grupo7_Pizarra_SignalR.dll
+C:\Prueba\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\Grupo7_Pizarra_SignalR.pdb
+C:\Prueba\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\Humanizer.dll
+C:\Prueba\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+C:\Prueba\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Prueba\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Prueba\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Prueba\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Prueba\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Prueba\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Prueba\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Prueba\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+C:\Prueba\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Prueba\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Prueba\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Prueba\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Prueba\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Prueba\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Prueba\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\Quartz.dll
+C:\Prueba\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\Quartz.Extensions.DependencyInjection.dll
+C:\Prueba\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\Quartz.Extensions.Hosting.dll
+C:\Prueba\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Prueba\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
+C:\Prueba\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Prueba\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Prueba\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\System.Runtime.Caching.dll
+C:\Prueba\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Prueba\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Prueba\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Prueba\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Prueba\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Prueba\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Prueba\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Prueba\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Prueba\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Prueba\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Prueba\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Prueba\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Prueba\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Prueba\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Prueba\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Prueba\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\Grupo7_Pizarra_SignalR_Data.dll
+C:\Prueba\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\Grupo7_Pizarra_SignalR_Servicios.dll
+C:\Prueba\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\Grupo7_Pizarra_SignalR_Data.pdb
+C:\Prueba\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\Grupo7_Pizarra_SignalR_Servicios.pdb
+C:\Prueba\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\obj\Debug\net6.0\Grupo7_Pizarra_SignalR.csproj.AssemblyReference.cache
+C:\Prueba\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\obj\Debug\net6.0\Grupo7_Pizarra_SignalR.GeneratedMSBuildEditorConfig.editorconfig
+C:\Prueba\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\obj\Debug\net6.0\Grupo7_Pizarra_SignalR.AssemblyInfoInputs.cache
+C:\Prueba\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\obj\Debug\net6.0\Grupo7_Pizarra_SignalR.AssemblyInfo.cs
+C:\Prueba\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\obj\Debug\net6.0\Grupo7_Pizarra_SignalR.csproj.CoreCompileInputs.cache
+C:\Prueba\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\obj\Debug\net6.0\Grupo7_Pizarra_SignalR.MvcApplicationPartsAssemblyInfo.cache
+C:\Prueba\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\obj\Debug\net6.0\Grupo7_Pizarra_SignalR.RazorAssemblyInfo.cache
+C:\Prueba\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\obj\Debug\net6.0\Grupo7_Pizarra_SignalR.RazorAssemblyInfo.cs
+C:\Prueba\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\obj\Debug\net6.0\Grupo7_Pizarra_SignalR.sourcelink.json
+C:\Prueba\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\obj\Debug\net6.0\staticwebassets.build.json
+C:\Prueba\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\obj\Debug\net6.0\staticwebassets.development.json
+C:\Prueba\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\obj\Debug\net6.0\staticwebassets\msbuild.Grupo7_Pizarra_SignalR.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Prueba\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\obj\Debug\net6.0\staticwebassets\msbuild.build.Grupo7_Pizarra_SignalR.props
+C:\Prueba\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Grupo7_Pizarra_SignalR.props
+C:\Prueba\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Grupo7_Pizarra_SignalR.props
+C:\Prueba\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Prueba\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Prueba\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\obj\Debug\net6.0\scopedcss\bundle\Grupo7_Pizarra_SignalR.styles.css
+C:\Prueba\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\obj\Debug\net6.0\scopedcss\projectbundle\Grupo7_Pizarra_SignalR.bundle.scp.css
+C:\Prueba\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\obj\Debug\net6.0\Grupo7_P.E7FDB316.Up2Date
+C:\Prueba\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\obj\Debug\net6.0\Grupo7_Pizarra_SignalR.dll
+C:\Prueba\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\obj\Debug\net6.0\refint\Grupo7_Pizarra_SignalR.dll
+C:\Prueba\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\obj\Debug\net6.0\Grupo7_Pizarra_SignalR.pdb
+C:\Prueba\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\obj\Debug\net6.0\Grupo7_Pizarra_SignalR.genruntimeconfig.cache
+C:\Prueba\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\obj\Debug\net6.0\ref\Grupo7_Pizarra_SignalR.dll
+C:\Programacion Web 3 TP\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\appsettings.Development.json
+C:\Programacion Web 3 TP\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\appsettings.json
+C:\Programacion Web 3 TP\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\libman.json
+C:\Programacion Web 3 TP\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\Grupo7_Pizarra_SignalR.staticwebassets.runtime.json
+C:\Programacion Web 3 TP\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\Grupo7_Pizarra_SignalR.exe
+C:\Programacion Web 3 TP\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\Grupo7_Pizarra_SignalR.deps.json
+C:\Programacion Web 3 TP\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\Grupo7_Pizarra_SignalR.runtimeconfig.json
+C:\Programacion Web 3 TP\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\Grupo7_Pizarra_SignalR.dll
+C:\Programacion Web 3 TP\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\Grupo7_Pizarra_SignalR.pdb
+C:\Programacion Web 3 TP\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\Humanizer.dll
+C:\Programacion Web 3 TP\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+C:\Programacion Web 3 TP\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Programacion Web 3 TP\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Programacion Web 3 TP\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Programacion Web 3 TP\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Programacion Web 3 TP\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Programacion Web 3 TP\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Programacion Web 3 TP\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Programacion Web 3 TP\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+C:\Programacion Web 3 TP\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Programacion Web 3 TP\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Programacion Web 3 TP\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Programacion Web 3 TP\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Programacion Web 3 TP\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Programacion Web 3 TP\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Programacion Web 3 TP\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\Quartz.dll
+C:\Programacion Web 3 TP\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\Quartz.Extensions.DependencyInjection.dll
+C:\Programacion Web 3 TP\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\Quartz.Extensions.Hosting.dll
+C:\Programacion Web 3 TP\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Programacion Web 3 TP\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
+C:\Programacion Web 3 TP\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Programacion Web 3 TP\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Programacion Web 3 TP\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\System.Runtime.Caching.dll
+C:\Programacion Web 3 TP\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Programacion Web 3 TP\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Programacion Web 3 TP\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Programacion Web 3 TP\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Programacion Web 3 TP\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Programacion Web 3 TP\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Programacion Web 3 TP\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Programacion Web 3 TP\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Programacion Web 3 TP\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Programacion Web 3 TP\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Programacion Web 3 TP\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Programacion Web 3 TP\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Programacion Web 3 TP\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Programacion Web 3 TP\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Programacion Web 3 TP\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Programacion Web 3 TP\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\Grupo7_Pizarra_SignalR_Data.dll
+C:\Programacion Web 3 TP\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\Grupo7_Pizarra_SignalR_Servicios.dll
+C:\Programacion Web 3 TP\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\Grupo7_Pizarra_SignalR_Data.pdb
+C:\Programacion Web 3 TP\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\bin\Debug\net6.0\Grupo7_Pizarra_SignalR_Servicios.pdb
+C:\Programacion Web 3 TP\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\obj\Debug\net6.0\Grupo7_Pizarra_SignalR.csproj.AssemblyReference.cache
+C:\Programacion Web 3 TP\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\obj\Debug\net6.0\Grupo7_Pizarra_SignalR.GeneratedMSBuildEditorConfig.editorconfig
+C:\Programacion Web 3 TP\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\obj\Debug\net6.0\Grupo7_Pizarra_SignalR.AssemblyInfoInputs.cache
+C:\Programacion Web 3 TP\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\obj\Debug\net6.0\Grupo7_Pizarra_SignalR.AssemblyInfo.cs
+C:\Programacion Web 3 TP\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\obj\Debug\net6.0\Grupo7_Pizarra_SignalR.csproj.CoreCompileInputs.cache
+C:\Programacion Web 3 TP\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\obj\Debug\net6.0\Grupo7_Pizarra_SignalR.MvcApplicationPartsAssemblyInfo.cache
+C:\Programacion Web 3 TP\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\obj\Debug\net6.0\Grupo7_Pizarra_SignalR.RazorAssemblyInfo.cache
+C:\Programacion Web 3 TP\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\obj\Debug\net6.0\Grupo7_Pizarra_SignalR.RazorAssemblyInfo.cs
+C:\Programacion Web 3 TP\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\obj\Debug\net6.0\Grupo7_Pizarra_SignalR.sourcelink.json
+C:\Programacion Web 3 TP\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\obj\Debug\net6.0\staticwebassets.build.json
+C:\Programacion Web 3 TP\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\obj\Debug\net6.0\staticwebassets.development.json
+C:\Programacion Web 3 TP\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\obj\Debug\net6.0\staticwebassets\msbuild.Grupo7_Pizarra_SignalR.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Programacion Web 3 TP\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\obj\Debug\net6.0\staticwebassets\msbuild.build.Grupo7_Pizarra_SignalR.props
+C:\Programacion Web 3 TP\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Grupo7_Pizarra_SignalR.props
+C:\Programacion Web 3 TP\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Grupo7_Pizarra_SignalR.props
+C:\Programacion Web 3 TP\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Programacion Web 3 TP\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Programacion Web 3 TP\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\obj\Debug\net6.0\scopedcss\bundle\Grupo7_Pizarra_SignalR.styles.css
+C:\Programacion Web 3 TP\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\obj\Debug\net6.0\scopedcss\projectbundle\Grupo7_Pizarra_SignalR.bundle.scp.css
+C:\Programacion Web 3 TP\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\obj\Debug\net6.0\Grupo7_P.E7FDB316.Up2Date
+C:\Programacion Web 3 TP\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\obj\Debug\net6.0\Grupo7_Pizarra_SignalR.dll
+C:\Programacion Web 3 TP\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\obj\Debug\net6.0\refint\Grupo7_Pizarra_SignalR.dll
+C:\Programacion Web 3 TP\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\obj\Debug\net6.0\Grupo7_Pizarra_SignalR.pdb
+C:\Programacion Web 3 TP\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\obj\Debug\net6.0\Grupo7_Pizarra_SignalR.genruntimeconfig.cache
+C:\Programacion Web 3 TP\Pizarra-PW3\Ejemplo_Pizarra_Propio_SignalR\obj\Debug\net6.0\ref\Grupo7_Pizarra_SignalR.dll

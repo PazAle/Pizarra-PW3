@@ -23,8 +23,7 @@ namespace Grupo7_Pizarra_SignalR_Data.Entidades
         {
             if (!optionsBuilder.IsConfigured)
             {
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-                optionsBuilder.UseSqlServer("Server=DELL-LATITUDE74;Database=Pizarra;Trusted_Connection=True;Encrypt=False");
+                optionsBuilder.UseSqlServer("Server=JOACO\\SQLEXPRESS;Database=Pizarra;Trusted_Connection=True;Encrypt=False");
             }
         }
 
@@ -37,6 +36,11 @@ namespace Grupo7_Pizarra_SignalR_Data.Entidades
                 entity.ToTable("Dibujo");
 
                 entity.Property(e => e.Dibujo1).HasColumnName("Dibujo");
+
+                entity.HasOne(d => d.IdSalaNavigation)
+                    .WithMany(p => p.Dibujos)
+                    .HasForeignKey(d => d.IdSala)
+                    .HasConstraintName("FK_Dibujo_Salas");
             });
 
             modelBuilder.Entity<Sala>(entity =>
