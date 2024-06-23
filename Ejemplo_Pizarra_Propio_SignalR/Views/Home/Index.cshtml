@@ -114,22 +114,35 @@
         }
 
         .estilo-h1{
-        color: #0a4b26;
+            color: #0a4b26;
         }
+
+        .fade-transition {
+            transition: opacity 0.5s ease-in-out;
+            opacity: 0;
+        }
+
+        .fade-transition.show {
+            opacity: 1;
+        }
+
 </style>
 
 <div class="pizarra-background">
     <div class="container pizarra-form">
         <div class="text-center">
             <h1 class="display-4 mb-4 estilo-h1">Bienvenido a la Pizarra</h1>
-            <form action="/Pizarra/PizarraColaborativa" method="post">
-                <div class="inputbox">
-                    <input required="required" type="text" id="nombre" name="nombre">
+            <form action="/Pizarra/PizarraColaborativa" method="post" id="validacion-usuario">
+                <div class="inputbox"><br>
+                    <input type="text" id="nombre" name="nombre">
                     <span>Ingrese su nombre</span>
                     <i></i>
                 </div>
+                <span id="error-usuario" class="fade-transition" style="color: red; font-size: 0.9em; margin-top: 5px; display: none;">El campo de nombre no puede estar vacío.</span>
                 <button type="submit" class="btn-ingresar">Ingresar</button>
             </form>
         </div>
     </div>
 </div>
+
+<script src="~/js/validacion.js"></script>

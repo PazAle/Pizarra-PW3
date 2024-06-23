@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ivan\\source\\repos\\Pizarra-PW3\\Ejemplo_Pizarra_Propio_SignalR\\Grupo7_Pizarra_SignalR.csproj": {}
+    "C:\\Programacion Web 3 TP\\Pizarra-PW3\\Ejemplo_Pizarra_Propio_SignalR\\Grupo7_Pizarra_SignalR.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ivan\\source\\repos\\Pizarra-PW3\\Ejemplo_Pizarra_Propio_SignalR\\Grupo7_Pizarra_SignalR.csproj": {
+    "C:\\Programacion Web 3 TP\\Pizarra-PW3\\Ejemplo_Pizarra_Propio_SignalR\\Grupo7_Pizarra_SignalR.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ivan\\source\\repos\\Pizarra-PW3\\Ejemplo_Pizarra_Propio_SignalR\\Grupo7_Pizarra_SignalR.csproj",
+        "projectUniqueName": "C:\\Programacion Web 3 TP\\Pizarra-PW3\\Ejemplo_Pizarra_Propio_SignalR\\Grupo7_Pizarra_SignalR.csproj",
         "projectName": "Grupo7_Pizarra_SignalR",
-        "projectPath": "C:\\Users\\Ivan\\source\\repos\\Pizarra-PW3\\Ejemplo_Pizarra_Propio_SignalR\\Grupo7_Pizarra_SignalR.csproj",
-        "packagesPath": "C:\\Users\\Ivan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ivan\\source\\repos\\Pizarra-PW3\\Ejemplo_Pizarra_Propio_SignalR\\obj\\",
+        "projectPath": "C:\\Programacion Web 3 TP\\Pizarra-PW3\\Ejemplo_Pizarra_Propio_SignalR\\Grupo7_Pizarra_SignalR.csproj",
+        "packagesPath": "C:\\Users\\joaqu\\.nuget\\packages\\",
+        "outputPath": "C:\\Programacion Web 3 TP\\Pizarra-PW3\\Ejemplo_Pizarra_Propio_SignalR\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Ivan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\joaqu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,24 +26,43 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Programacion Web 3 TP\\Pizarra-PW3\\Grupo7_Pizarra_SignalR_Data\\Grupo7_Pizarra_SignalR_Data.csproj": {
+                "projectPath": "C:\\Programacion Web 3 TP\\Pizarra-PW3\\Grupo7_Pizarra_SignalR_Data\\Grupo7_Pizarra_SignalR_Data.csproj"
+              },
+              "C:\\Programacion Web 3 TP\\Pizarra-PW3\\Grupo7_Pizarra_SignalR_Servicios\\Grupo7_Pizarra_SignalR_Servicios.csproj": {
+                "projectPath": "C:\\Programacion Web 3 TP\\Pizarra-PW3\\Grupo7_Pizarra_SignalR_Servicios\\Grupo7_Pizarra_SignalR_Servicios.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.31, )"
+            },
             "Quartz": {
               "target": "Package",
               "version": "[3.8.1, )"
@@ -68,7 +91,163 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Programacion Web 3 TP\\Pizarra-PW3\\Grupo7_Pizarra_SignalR_Data\\Grupo7_Pizarra_SignalR_Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Programacion Web 3 TP\\Pizarra-PW3\\Grupo7_Pizarra_SignalR_Data\\Grupo7_Pizarra_SignalR_Data.csproj",
+        "projectName": "Grupo7_Pizarra_SignalR_Data",
+        "projectPath": "C:\\Programacion Web 3 TP\\Pizarra-PW3\\Grupo7_Pizarra_SignalR_Data\\Grupo7_Pizarra_SignalR_Data.csproj",
+        "packagesPath": "C:\\Users\\joaqu\\.nuget\\packages\\",
+        "outputPath": "C:\\Programacion Web 3 TP\\Pizarra-PW3\\Grupo7_Pizarra_SignalR_Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\joaqu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.31, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.31, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.31, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.31, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Programacion Web 3 TP\\Pizarra-PW3\\Grupo7_Pizarra_SignalR_Servicios\\Grupo7_Pizarra_SignalR_Servicios.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Programacion Web 3 TP\\Pizarra-PW3\\Grupo7_Pizarra_SignalR_Servicios\\Grupo7_Pizarra_SignalR_Servicios.csproj",
+        "projectName": "Grupo7_Pizarra_SignalR_Servicios",
+        "projectPath": "C:\\Programacion Web 3 TP\\Pizarra-PW3\\Grupo7_Pizarra_SignalR_Servicios\\Grupo7_Pizarra_SignalR_Servicios.csproj",
+        "packagesPath": "C:\\Users\\joaqu\\.nuget\\packages\\",
+        "outputPath": "C:\\Programacion Web 3 TP\\Pizarra-PW3\\Grupo7_Pizarra_SignalR_Servicios\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\joaqu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Programacion Web 3 TP\\Pizarra-PW3\\Grupo7_Pizarra_SignalR_Data\\Grupo7_Pizarra_SignalR_Data.csproj": {
+                "projectPath": "C:\\Programacion Web 3 TP\\Pizarra-PW3\\Grupo7_Pizarra_SignalR_Data\\Grupo7_Pizarra_SignalR_Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

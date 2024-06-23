@@ -31,16 +31,19 @@ public class PizarraController : Controller
     [HttpPost]
     public IActionResult PizarraColaborativa(string? nombre)
     {
-        HttpContext.Session.SetString("nombre", nombre);
-        if(nombre == null)
+
+        if (string.IsNullOrEmpty(nombre))
         {
-            nombre = HttpContext.Session.GetString("nombre");
+            return RedirectToAction("Index", "Home");
         }
+
+        HttpContext.Session.SetString("nombre", nombre);
+
         TempData["nombre"] = nombre;
         ViewBag.Salas = _salaServicio.ObtenerTodosLosNombresDeLasSalas();
         return View();
     }
-    
+
     public IActionResult Index()
     {
         TempData["nombre"] = HttpContext.Session.GetString("nombre");

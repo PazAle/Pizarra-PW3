@@ -64,31 +64,47 @@ function getMousePos(canvas, evt) {
 
 // Conexión con el hub de SignalR
 connection.start().then(function () {
-    document.getElementById("crearSala").addEventListener("click", function () {
-        salaActual = document.getElementById("salaInput").value;
-        connection.invoke("UnirseASala", salaActual).catch(function (err) {
-            return console.error(err.toString());
-        });
-        unirseASala();
+    document.getElementById("crearSala").addEventListener("click", function (event) {
+    salaActual = document.getElementById("salaInput").value;
+    errorMessage = document.getElementById("error-sala");
+
+    if (salaActual === "") {
+        errorMessage.style.display = "block";
+        event.preventDefault();
+    } else {
+        errorMessage.style.display = "none";
+
+
+    connection.invoke("UnirseASala", salaActual).catch(function (err) {
+        return console.error(err.toString());
     });
+        unirseASala();
+    }
+});
     const buttons = document.querySelectorAll('#divSalasCreadas button.buttom-style-custom');
 
 
     buttons.forEach(button => {
-            button.addEventListener('click', function (event) {
-                
-                event.preventDefault();
+        button.addEventListener('click', function (event) {
 
-                let input = button.previousElementSibling;
-                salaActual = input.value;
-                
+            event.preventDefault();
+
+            let input = button.previousElementSibling;
+            salaActual = input.value.trim();
+            errorMessage = document.getElementById("error-sala");
+            if (salaActual === "") {
+                errorMessage.style.display = "block";
+                return
+            } else {
+                errorMessage.style.display = "none";
+                console.log(salaActual);
                 connection.invoke("UnirseASala", salaActual).catch(function (err) {
                     return console.error(err.toString());
                 });
-
                 unirseASala();
-            });
-        });  
+            }
+        });
+    });
 
     document.getElementById("sendButton").addEventListener("click", function () {
         var message = document.getElementById("messageInput").value;
