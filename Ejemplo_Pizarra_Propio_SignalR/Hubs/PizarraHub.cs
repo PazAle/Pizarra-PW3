@@ -39,11 +39,6 @@ public class PizarraHub : Hub
 
     public async Task UnirseASala(string sala)
     {
-        if (!primeraconexion)
-        {
-            dibujosPorSala[sala] = new List<string>();
-            dibujosPorSala[sala] = await _dibujoServicio.ObtenerDibujosAsync((await _salaServicio.ObtenerSalaPorNombreAsync(sala)).IdSala);
-        }
         ObtenerTodasLasSalas();
         if (!salas.ContainsKey(sala))
         {
@@ -80,8 +75,14 @@ public class PizarraHub : Hub
     private void ObtenerTodasLasSalas()
     {
         Task<List<string>> salasBD = _salaServicio.ObtenerTodosLosNombresDeLasSalasAsync();
+        Dictionary<string, HashSet<string>> salasHub = salas;
         foreach (var sala in salasBD.Result)
         {
+            if (salasHub.ContainsKey(sala))
+            {
+                salas[sala] = salasHub[sala];
+                continue;
+            }
             salas[sala] = new HashSet<string>();
         }
     }
@@ -161,8 +162,22 @@ public class PizarraHub : Hub
 
     public async Task EnviarMensaje(string sala, string message)
     {
-        var usuario = Context.Items["Usuario"];
-        await Clients.Group(sala).SendAsync("RecibirMensaje", usuario, message);
+        if (!string.IsNullOrEmpty(message))
+        {
+            var usuario = Context.Items["Usuario"];
+            await Clients.Group(sala).SendAsync("RecibirMensaje", usuario, message);
+        }
+
+    }
+
+    public async Task BorrarDibujos(string sala)
+    {
+        if (salas.ContainsKey(sala))
+        {
+            var salaEncontrada = await _salaServicio.ObtenerSalaPorNombreAsync(sala);
+            _dibujoServicio.BorrarDibujos(salaEncontrada.IdSala);
+            await Clients.Group(sala).SendAsync("LimpiarPizarra");
+        }
     }
 
     private async Task ActualizarUsuariosEnSala(string sala)
