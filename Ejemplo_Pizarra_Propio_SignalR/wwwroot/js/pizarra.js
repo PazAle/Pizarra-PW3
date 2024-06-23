@@ -71,7 +71,7 @@ connection.start().then(function () {
         });
         unirseASala();
     });
-    const buttons = document.querySelectorAll('#divSalasCreadas button.btn-primary');
+    const buttons = document.querySelectorAll('#divSalasCreadas button.buttom-style-custom');
 
 
     buttons.forEach(button => {
