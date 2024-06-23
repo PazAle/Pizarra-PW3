@@ -4,70 +4,69 @@
     var salaSeleccionada = TempData["sala"];
 }
 
-<div>
-    <h1>¡Bienvenido, @nombre!</h1>
-</div>
-
-<div class="row my-4" id="divNombreSala">
-    <div class="col-md-8 d-flex">
-        <input type="text" class="form-control me-2 col-md-6" id="salaInput" placeholder="Nombre de la sala">
-        <button class="btn btn-primary col-md-3 ml-2" id="crearSala">Crear/Unirse a Sala</button>
+<div id="container-prepizarra" class="container-prepizarra bodyclass">
+    <div>
+        <h1 id="h1-fuera-de-sala">¡Bienvenido, @nombre!</h1>
+        <h1 id="h1-en-sala" hidden="true"></h1>
     </div>
-</div>
-@if (ViewBag.Salas.Count > 0)
-{
-    <div class="form-group" id="divSalasCreadas">
-        @foreach (var sala in ViewBag.Salas)
-        {
-            <input type="text" hidden="true" name="salaCreada" value="@sala"/>
-            <button class="btn btn-primary mr-1 mb-1" id="unirme">@sala</button>
-        }
-    </div>
-}
 
-<div id="salir" hidden="true"></div>
-
-    <div class="row" hidden="true" id="divPizarra">
-        <div class="col">
-        <canvas id="pizarra" width="800" height="600" style="background-color: #2E8B57; border: 10px solid #8B4513; box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); border-radius: 5px; margin: 20px auto;" @*style="background-image: url('../img/pizarra.jpg')"*@></canvas>
+    <div class="row my-4 formato-prepizarra" id="divNombreSala">
+        <div class="col-md-8 d-flex justify-content-center">
+            <input type="text" class="form-control me-2 col-md-6" id="salaInput" placeholder="Nombre de la sala">
+            <button class=" col-md-3 ml-2 btn-crear-unirse-sala" id="crearSala">Crear/Unirse a Sala</button>
         </div>
-        <div class="col">
-            <div class="d-flex align-items-center mb-2">
-                <label for="color" class="me-2">Color del trazo</label>
-                <input type="color" id="color" class="form-control col-6 col-sm-4 col-md-3 ml-1" value="#000000">
+    </div>
+    @if (ViewBag.Salas.Count > 0)
+    {
+        <div class="form-group formato-prepizarra bodyclass" id="divSalasCreadas">
+            @foreach (var sala in ViewBag.Salas)
+            {
+                <input type="text" hidden="true" name="salaCreada" value="@sala" />
+                <button class=" mr-3 mb-1 buttom-style-custom" id="unirme">@sala</button>
+            }
+        </div>
+    }
+</div>
+
+
+
+
+<div id="salir" hidden="true" style="margin-bottom: 10px; margin-top: 10px; color: #fff;" class="bodyclass"></div>
+
+<div class="container bodyclass">
+    <div class="row" id="divPizarra" hidden="true">
+        <div class="col-md-9" style="padding-left:0;">
+            <canvas id="pizarra" width="800" height="600" style="background-color: #2E8B57; border: 10px solid #8B4513; box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); border-radius: 5px; "></canvas>
+        </div>
+        <div class="col-md-3">
+            <div id="notepad">
+                <div class="d-flex align-items-center mb-2">
+                    <label for="color" class="me-2">Color del trazo</label>
+                    <input type="color" id="color" class="form-control col-6 col-sm-4 col-md-3 ml-1" value="#000000">
+                </div>
+                <div class="d-flex align-items-center mb-2">
+                    <label for="size" class="me-2">Grosor del trazo</label>
+                    <input type="number" id="size" class="form-control col-6 col-sm-4 col-md-3 ml-1" value="1" min="1" max="10">
+                </div>
+                <button class="btn btn-secondary btn-block mb-2" id="limpiar">Limpiar</button>
             </div>
-            <div class="d-flex align-items-center mb-2">
-                <label for="size" class="me-2">Grosor del trazo</label>
-                <input type="number" id="size" class="form-control col-6 col-sm-4 col-md-3 ml-1" value="1" min="1" max="10">
-            </div>
-            <button class="btn btn-secondary btn-block mb-2" id="limpiar">Limpiar</button>
-        <button class="btn btn-secondary btn-block mb-2" id="guardarBtn">Guardar</button>
-        <button class="btn btn-secondary btn-block mb-2" id="cargarBtn">Cargar</button>
             <div id="usuariosContainer" class="mt-4">
                 <h5>Usuarios Conectados</h5>
-                <div id="usuariosConectados" class="border p-2"></div>
+                <div id="usuariosConectados"></div>
             </div>
-        </div>
-    </div>
-
-
-    <div class="row my-4" hidden="true" id="divChat">
-        <div class="col-md-8">
-            <div id="chat-container" class="border p-2">
-                <div id="messagesList"></div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="input-group mb-2">
-                <input type="text" id="messageInput" class="form-control" placeholder="Escribe un mensaje...">
-                <div class="input-group-append">
-                    <button class="btn btn-success" id="sendButton">Enviar</button>
+            <div id="divChat" class="mt-4 d-flex flex-column align-items-center">
+                <div id="messagesList" class="mb-2"></div>
+                <div class="input-group mb-2">
+                    <input type="text" id="messageInput" class="form-control" placeholder="Escribe un mensaje...">
+                    <div class="input-group-append">
+                        <button class="btn btn-success" id="sendButton">Enviar</button>
+                    </div>
                 </div>
+                <span id="error-message" style="display: none; color: red;">El mensaje no puede estar vacío</span>
             </div>
-        <span id="error-message" style="color: red; display: none;">El mensaje no puede estar vacío</span>
-
         </div>
     </div>
+</div>
 
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

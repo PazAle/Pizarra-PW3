@@ -12,7 +12,6 @@ let divNombreSala = document.getElementById("divNombreSala");
 let divSalasCreadas = document.getElementById("divSalasCreadas");
 let divSalir = document.getElementById("salir");
 let btnSalir = document.createElement('a');
-
 function unirseASala() {
     divPizarra.removeAttribute("hidden");
     divChat.removeAttribute("hidden");
@@ -22,7 +21,12 @@ function unirseASala() {
     btnSalir.className = "btn btn-secondary";
     divSalir.appendChild(btnSalir);
     divSalir.removeAttribute("hidden");
-  btnSalir.onclick = function () {
+    document.getElementById("h1-fuera-de-sala").setAttribute("hidden", true);
+    document.getElementById("h1-en-sala").removeAttribute("hidden");
+    document.getElementById("h1-en-sala").textContent = 'Te uniste a la sala - ' + salaActual;
+    document.getElementById("container-prepizarra").classList.remove("container-prepizarra");
+    document.getElementById("container-prepizarra").classList.add("class-titulo-en-sala");
+    btnSalir.onclick = function () {
         connection.invoke("SalirDeSala", salaActual).catch(function (err) {
             return console.error(err.toString());
         });
@@ -58,33 +62,19 @@ function getMousePos(canvas, evt) {
     };
 }
 
-function guardarImagen() {
-    // Esta función ya no es necesaria
-}
-
-function cargarImagen() {
-    // Esta función ya no es necesaria
-}
-
 // Conexión con el hub de SignalR
 connection.start().then(function () {
     document.getElementById("crearSala").addEventListener("click", function () {
         salaActual = document.getElementById("salaInput").value;
-        errorSala = document.getElementById("error-sala");
-
-        if (salaActual === "") {
-            errorSala.style.display = "block";
-            return;
-        }
-        errorSala.style.display = "none";
         connection.invoke("UnirseASala", salaActual).catch(function (err) {
             return console.error(err.toString());
         });
         unirseASala();
     });
-        const buttons = document.querySelectorAll('#divSalasCreadas button.btn-primary');
+    const buttons = document.querySelectorAll('#divSalasCreadas button.btn-primary');
 
-        buttons.forEach(button => {
+
+    buttons.forEach(button => {
             button.addEventListener('click', function (event) {
                 
                 event.preventDefault();
@@ -92,7 +82,6 @@ connection.start().then(function () {
                 let input = button.previousElementSibling;
                 salaActual = input.value;
                 
-                console.log(salaActual);
                 connection.invoke("UnirseASala", salaActual).catch(function (err) {
                     return console.error(err.toString());
                 });
@@ -197,8 +186,12 @@ connection.start().then(function () {
         drawing = false;
     });
 
-    document.getElementById("limpiar").addEventListener("click", function () {
+    connection.on("LimpiarPizarra", function () {
+
         context.clearRect(0, 0, canvas.width, canvas.height);
+    });
+
+    document.getElementById("limpiar").addEventListener("click", function () {
         connection.invoke("BorrarDibujos", salaActual).catch(function (err) {
             return console.error(err.toString());
         });
@@ -229,5 +222,4 @@ connection.start().then(function () {
 
 }).catch(function (err) {
     //return console.error(err.toString());
-    return console.log("aca");
 });
