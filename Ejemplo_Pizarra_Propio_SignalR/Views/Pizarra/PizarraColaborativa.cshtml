@@ -19,7 +19,7 @@
     </div>
     @if (ViewBag.Salas.Count > 0)
     {
-        <div class="form-group formato-prepizarra bodyclass" id="divSalasCreadas">
+        <div class="form-group formato-prepizarra2 bodyclass" id="divSalasCreadas">
             @foreach (var sala in ViewBag.Salas)
             {
                 <input type="text" hidden="true" name="salaCreada" value="@sala" />
@@ -29,17 +29,14 @@
     }
 </div>
 
-
-
-
 <div id="salir" hidden="true" style="margin-bottom: 10px; margin-top: 10px; color: #fff;" class="bodyclass"></div>
 
 <div class="container bodyclass">
     <div class="row" id="divPizarra" hidden="true">
-        <div class="col-md-9" style="padding-left:0;">
-            <canvas id="pizarra" width="800" height="600" style="background-color: #2E8B57; border: 10px solid #8B4513; box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); border-radius: 5px; "></canvas>
+        <div class="col-12 col-md-9" style="padding-left:0;">
+            <canvas id="pizarra" class="pizarra" width="800" height="600"></canvas>
         </div>
-        <div class="col-md-3">
+        <div class="col-12 col-md-3">
             <div id="notepad">
                 <div class="d-flex align-items-center mb-2">
                     <label for="color" class="me-2">Color del trazo</label>
@@ -56,14 +53,14 @@
                 <div id="usuariosConectados"></div>
             </div>
             <div id="divChat" class="mt-4 d-flex flex-column align-items-center">
-                <div id="messagesList" class="mb-2"></div>
+                <div id="messagesList" class="mb-2 w-100"></div>
                 <div class="input-group mb-2">
                     <input type="text" id="messageInput" class="form-control" placeholder="Escribe un mensaje...">
                     <div class="input-group-append">
                         <button class="btn btn-success" id="sendButton">Enviar</button>
                     </div>
                 </div>
-                <span id="error-message" style="display: none; color: red;">El mensaje no puede estar vacío</span>
+                <span id="error-message" class="text-danger" style="display: none;">El mensaje no puede estar vacío</span>
             </div>
         </div>
     </div>

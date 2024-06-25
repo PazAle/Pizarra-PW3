@@ -27,9 +27,13 @@
     width: 80px;
 }
 .pizarra {
+    width: 800px;
+    height: 600px;
+    background-color: #2E8B57;
+    border: 10px solid #8B4513;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
     
-    
-    height: "600";
 }
 /*LAYOUT STYLES*/
 
@@ -122,6 +126,11 @@ body {
     display: flex;
     justify-content: center;
     width: 100%;
+}
+
+.formato-prepizarra2 {
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .class-titulo-en-sala {
@@ -233,6 +242,7 @@ body {
 
 }
 
+
 .buttom-style-custom {
     cursor: pointer;
     border: 3px solid #414141;
@@ -267,7 +277,7 @@ body {
     color: #fff;
 }
 
-    .btn-crear-unirse-sala:hover {
+.btn-crear-unirse-sala:hover {
         background-color: #1E1E1E;
         color: #555;
-    }
+}
